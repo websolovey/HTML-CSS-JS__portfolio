@@ -1,0 +1,38 @@
+.slider-arrows {
+    display: block;
+    text-align: center;
+}
+
+
+
+.portfolio__slider--arrow-next,
+.portfolio__slider--arrow-prev {
+  font-family: $ubuntu;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: $gray;
+
+  text-transform: uppercase;
+
+  display: inline;
+
+  cursor: pointer;
+
+  transition-duration: .3s;
+
+  &:hover {
+      color: $gold;
+      transition-duration: .3s;
+  }
+}
+
+
+.portfolio__slider--arrow-prev {
+    margin-right: 1%;
+}
+
+.portfolio__slider--arrow-next {
+margin-left: 1%;
+}

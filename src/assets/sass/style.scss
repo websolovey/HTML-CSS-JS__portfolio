@@ -1,0 +1,94 @@
+@import "vars";
+@import "reset";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Playfair Display SC", serif, "Ubuntu", sans-serif;
+
+  background-color: $black;
+  color: $gray;
+
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.body__overflow-hidden {
+  overflow: hidden;
+}
+a.link {
+  outline: none;
+}
+.link {
+  color: $gray;
+
+  text-decoration: none;
+
+  outline: none;
+
+  border-top: 1px solid transparent;
+
+  &:hover {
+    color: $gold;
+    transition-duration: 0.3s;
+    border-color: $gold;
+  }
+}
+
+.link-text {
+  color: $gold;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//bootstrap
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+//blocks
+@import "blocks/head-block";
+@import "blocks/titles";
+@import "blocks/gradient-text";
+@import "blocks/menu";
+@import "blocks/menu-icon";
+@import "blocks/services";
+@import "blocks/portfolio";
+@import "blocks/portfolio-card";
+@import "blocks/portfolio-form";
+@import "blocks/slider";
+@import "blocks/feedbacks-contact";
+@import "blocks/feedbacks";
+@import "blocks/contact-us";
+@import "blocks/contact";
+@import "blocks/footer";
+
+//vendor
+@import "vendor/slick";

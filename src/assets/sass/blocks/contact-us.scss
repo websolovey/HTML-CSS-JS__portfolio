@@ -1,0 +1,198 @@
+.contact-us {
+  flex-basis: 49%;
+
+  @media screen and (max-width: 769px) {
+    flex-basis: 100%;
+    margin-top: 120px;
+  }
+  @media screen and (max-width: 769px) {
+    margin-top: 110px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 99px;
+
+  position: relative;
+
+  @media screen and (max-width: 769px) {
+    margin-top: 40px;
+  }
+  @media screen and (max-width: 426px) {
+    margin-top: 30px;
+  }
+}
+
+.form-input {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid $gray;
+
+  color: $gray;
+
+  width: 70%;
+
+  margin: 0 0 25px 0;
+
+  padding-left: 20px;
+
+  font-family: $ubuntu;
+  font-weight: 300;
+  font-size: 1.5rem;
+
+  &::placeholder {
+    color: #454545;
+  }
+
+  &:focus {
+    border-color: $gold;
+    transition-duration: .3s;
+  }
+
+  @media screen and (max-width: 426px) {
+    font-size: 1.2rem;
+  }
+}
+
+.contact-form__name,
+.contact-form__email {
+  height: 55px;
+
+  color: $gold;
+  // &:valid {
+  //   color: $gold;
+  // }
+}
+
+.contact-form__msg {
+  padding-top: 20px;
+  color: $gold;
+}
+
+.contact-form__btn {
+  font-family: $ubuntu;
+  font-size: 2rem;
+  font-weight: 300;
+
+  text-transform: uppercase;
+
+  color: $black;
+
+  background-color: $gold;
+
+  padding: 14px 65px;
+
+  border: none;
+  outline: none;
+
+  display: block;
+
+  margin: 0 auto;
+
+  &:hover {
+    background-color: darken($gold, $amount: 15%);
+  }
+  &:focus {
+    
+    outline: auto;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 426px) {
+    padding: 10px 60px;
+    font-size: 1.5rem;
+    width: auto;
+  }
+  @media screen and (max-width: 322px) {
+    padding: 10px 50px;
+  }
+}
+
+.contact-img {
+  margin: 75px auto;
+  display: block;
+
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
+.form__img {
+  max-width: 400px;
+  width: 45%;
+
+  position: absolute;
+  left: 57%;
+  bottom: -96px;
+  z-index: -1;
+
+  @media screen and (max-width: 1025px) {
+    width: 40%;
+    left: 63%;
+    bottom: -9%;
+  }
+  @media screen and (max-width: 769px) {
+    left: 60%;
+    bottom: -23%;
+  }
+
+  @media screen and (max-width: 426px) {
+    width: 37%;
+
+    bottom: -9%;
+  }
+  @media screen and (max-width: 376px) {
+    bottom: -6%;
+  }
+  @media screen and (max-width: 376px) {
+    bottom: -2%;
+  }
+}
+
+.send-mail {
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+
+  color: #b69b67;
+  text-transform: uppercase;
+
+  // display: none;
+}
+
+.error {
+  font-family: $ubuntu;
+  font-size: 1rem;
+
+  position: absolute;
+
+  display: none;
+
+  text-transform: lowercase;
+
+  color: red;
+
+  opacity: 80%;
+}
+
+#name_error {
+  top: 10%;
+  left: 15%;
+}
+#email_error {
+  top: 25%;
+  left: 15%;
+}
+#user_msg_error {
+  top: 83%;
+  left: 15%;
+}

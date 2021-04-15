@@ -1,0 +1,174 @@
+.block-menu {
+  width: 80%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #454545;
+
+  background: #303030;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  position: fixed;
+  top: 5%;
+  left: 10%;
+
+  z-index: 500;
+
+  display: none;
+
+  overflow: auto;
+
+
+  // @media screen and (max-width: 769px) {
+  //   height: 80%;
+  // }
+
+  // @media screen and (max-width: 1025px) {
+  //   width: 90%;
+  // }
+  @media screen and (max-width: 426px) {
+    width: 90%;
+    left: 0;
+    height: 90%;
+  }
+}
+
+.hide-menu {
+  display: none;
+}
+
+.block-menu__content {
+  margin: 55px 6% 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 769px) {
+    flex-wrap: wrap;
+  }
+}
+
+.block-menu__title {
+  margin: 17px auto 0;
+}
+
+.menu {
+  width: 43%;
+
+  .subtitle {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 769px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  ul {
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    li:nth-child(8),
+    li:nth-child(9) {
+      margin-left: 15%;
+
+      @media screen and (max-width: 769px) {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 769px) {
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 769px) {
+    margin-bottom: 30px;
+  }
+}
+
+.menu__right-block {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-basis: 43%;
+  display: none;
+
+  @media screen and (max-width: 769px) {
+    flex-basis: 100%;
+  }
+}
+
+//form
+
+.form__group {
+  width: 100%;
+  height: 30px;
+
+  position: relative;
+
+  &:hover {
+    .form__input {
+      border-color: $gold;
+      color: $gold;
+    }
+
+    .form__label {
+      color: $gold;
+    }
+  }
+}
+
+.form__input {
+  width: 94%;
+  height: 35px;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 1px solid #454545;
+
+  outline: none;
+
+  color: $gray;
+
+  transition: 0.3s;
+
+  &:focus ~ .form__label,
+  &:not(:placeholder-shown) ~ .form__label {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    top: -20px;
+    color: $gold;
+  }
+
+  &:focus {
+    border-color: $gold;
+    color: $gold;
+  }
+}
+
+.form__label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  color: #454545;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: 0.3s;
+
+  pointer-events: none;
+}

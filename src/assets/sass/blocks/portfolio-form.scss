@@ -1,0 +1,15 @@
+.portfolio__categories {
+  text-align: center;
+  margin: 50px 0;
+
+  @media screen and (max-width: 769px) {
+    margin: 25px 0;
+  }
+  display: none;
+}
+
+.portfolio__form-select {
+  background: transparent;
+  color: white;
+  padding: 10px;
+}

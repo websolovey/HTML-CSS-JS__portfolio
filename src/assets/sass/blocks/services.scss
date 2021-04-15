@@ -1,0 +1,160 @@
+.services {
+  padding-top: 120px;
+
+  @media screen and (max-width: 426px) {
+    padding-top: 50px;
+  }
+}
+
+.services__content {
+  display: flex;
+
+  padding-top: 60px;
+
+  @media screen and (max-width: 426px) {
+    padding-top: 25px;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.services__subtitle {
+  margin-bottom: 50px;
+
+  height: 30px;
+
+  position: relative;
+
+  @media screen and (max-width: 426px) {
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+  @media screen and (max-width: 321px) {
+    margin-bottom: 5px;
+  }
+}
+
+.services__link {
+  transition-duration: 0.3s;
+  &::before {
+    content: "";
+
+    height: 1px;
+    width: 0;
+
+    outline: none;
+
+    background: #454545;
+
+    position: absolute;
+    top: 53px;
+
+    transition-duration: 0.3s;
+
+    @media screen and (max-width: 426px) {
+      display: none;
+    }
+  }
+
+  &:focus {
+    &::before {
+      width: 70%;
+      transition-duration: 1s;
+    }
+  }
+  // &:hover {
+  //   font-size: 3.5rem;
+  //   line-height: 3.8rem;
+
+  //   transition-duration: 0.3s;
+
+  //   // &::before {
+  //   //   width: 85%;
+
+  //   //   transition-duration: 0.3s;
+  //   // }
+
+  //   @media screen and (max-width: 1281px) {
+  //     font-size: 3rem;
+  //     line-height: 3.5rem;
+  //   }
+  //   @media screen and (max-width: 769px) {
+  //     font-size: 2.5rem;
+  //     line-height: 3rem;
+  //   }
+  //   @media screen and (max-width: 426px) {
+  //     font-size: 1.5rem;
+  //     line-height: 2rem;
+  //   }
+  //   @media screen and (max-width: 321px) {
+  //     font-size: 1.3rem;
+  //     line-height: 1.6rem;
+  //   }
+  // }
+}
+
+.active_link {
+  font-size: 3.5rem;
+  line-height: 3.8rem;
+
+  transition-duration: 0.3s;
+  color: $gold;
+
+  border-color: $gold;
+
+  outline: none;
+
+  // &::before {
+  //   width: 85%;
+
+  //   transition-duration: 0.3s;
+  // }
+
+  @media screen and (max-width: 1281px) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  @media screen and (max-width: 426px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+}
+.services__nav {
+  flex-basis: 50%;
+
+  @media screen and (max-width: 426px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.services__tabs {
+  flex-basis: 46%;
+}
+.services__tab {
+  font-family: $ubuntu;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  @media screen and (max-width: 426px) {
+    margin-top: 20px;
+    margin-left: 5px;
+
+    font-size: 1rem;
+
+    flex-basis: 100%;
+  }
+  @media screen and (max-width: 321px) {
+    margin-top: 10px;
+  }
+}

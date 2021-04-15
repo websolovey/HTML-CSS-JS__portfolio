@@ -1,0 +1,41 @@
+.footer {
+  margin-top: 70px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  border-top: 1px solid $gold;
+
+  padding-top: 35px;
+
+  @media screen and (max-width:769px){
+    justify-content: space-around;
+  }
+}
+
+.footer__nav--item {
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  @media screen and (max-width:769px){
+    margin: 8px;
+  }
+}
+
+.footer__text {
+  // font-family: Ubuntu,sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+
+  color: #b4b4b4;
+
+  text-align: center;
+
+  margin: 70px 0 10px;
+}

@@ -1,0 +1,20 @@
+.feedbaks-contact--flex {
+  display: flex;
+
+  justify-content: space-between;
+
+  flex-basis: 100%;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 100px;
+
+  height: 805px;
+
+  @media screen and (max-width:769px) {
+    height: unset;
+  }
+  @media screen and (max-width:426px) {
+    margin-bottom: 55px;
+  }
+}
